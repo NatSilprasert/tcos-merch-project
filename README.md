@@ -1,4 +1,4 @@
-# Unofficial Merchandise Website for The Coming of Stages
+# Unofficial Merch Website for "The Coming of Stages"
 
 A Full Stack Merchandise Website using **ReactJS**, **NodeJS**, **ExpressJS** and **MongoDB**.
 
