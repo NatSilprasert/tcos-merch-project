@@ -53,8 +53,8 @@ const Header = () => {
                 
                     <div className={`${dropMenuShown ? 'sm:block' : 'sm:hidden'} hidden absolute dropdown-menu top-22 md:right-[7vw] lg:right-[9vw]`}>
                         <div className='flex flex-col gap-2 w-36 py-3 pt-4 px-5 bg-gray-900 text-gray-500 rounded-b'>
-                            <p onClick={() => (navigate('/orders'), setDropMenuShown(!dropMenuShown))} className='cursor-pointer text-[14px] hover:text-white select-none'>Orders</p>
-                            <Link onClick={() => (setVisible(false), setDropMenuShown(!dropMenuShown), logout())} className='cursor-pointer text-[14px] hover:text-white select-none' to='/login'>{token ? 'Logout' : 'Sign In'}</Link>
+                            <p onClick={() => (navigate('/orders'), setDropMenuShown(false))} className='cursor-pointer text-[14px] hover:text-white select-none'>Orders</p>
+                            <Link onClick={() => (setVisible(false), setDropMenuShown(false), logout())} className='cursor-pointer text-[14px] hover:text-white select-none' to='/login'>{token ? 'Logout' : 'Sign In'}</Link>
                         </div>
                     </div>
                     
