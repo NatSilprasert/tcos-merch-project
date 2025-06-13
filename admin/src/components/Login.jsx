@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import { useContext } from 'react';
-import { ProductContext } from '../context/productContext';
+import { ProductContext } from '../context/ProductContext';
 
 const Login = () => {
 
