@@ -53,7 +53,7 @@ const Product = () => {
           <h1 className='font-medium text-xl md:text-2xl mt-2'>{productData.name}</h1>
           <p className='mt-5 text-3xl md:text-4xl font-medium'>฿{productData.price}</p>
           <p className='mt-5 md:w-4/5 text-[14px]'>{productData.description}</p>
-          {productData.sizes ? (
+          {productData.sizeAvailable ? (
             <div className='flex flex-col gap-4 my-8 mb-0'>
               <p className='text-[14px]'>Select Size</p>
                 <div className='flex gap-2'>
