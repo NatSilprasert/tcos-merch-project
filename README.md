@@ -2,6 +2,10 @@
 
 A Full Stack Merchandise Website using **ReactJS**, **NodeJS**, **ExpressJS** and **MongoDB**.
 
+**User Panel:** https://merchtcos.vercel.app/
+
+**Admin Panel:** https://merchtcos-admin.vercel.app/
+
 ## ⚙️ Tech Stack
 
 - **Frontend:** ReactJS + TailwindCSS
