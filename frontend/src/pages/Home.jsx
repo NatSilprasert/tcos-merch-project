@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from '../components/Hero'
 import MerchSection from '../components/MerchSection'
-import Promotion from '../components/Promotion'
 
 const Home = () => {
+  const [merchLoaded, setMerchLoaded] = useState(false);
+
   return (
     <div>
       <Hero/>
-      {/* <Promotion/> */}
-      <MerchSection/>
+
+      {!merchLoaded && <div className='w-full h-screen justify-center items-center'>Loading...</div>}
+      <MerchSection onLoaded={() => setMerchLoaded(true)} />
     </div>
   )
 }

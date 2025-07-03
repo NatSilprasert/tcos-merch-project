@@ -97,7 +97,7 @@ const Update = ({products, productId}) => {
     }, [])
         
     return (
-        <div className={`${openEdit ? '' : 'hidden'} absolute w-full top-1 z-100 p-6 absolute bg-white border m-auto`}>
+        <div className={`${openEdit ? '' : 'hidden'} w-full top-1 z-100 p-6 absolute bg-white border m-auto`}>
             <X onClick={() => setOpenEdit(false)} className='absolute right-6'></X>
             <form onSubmit={updateProduct} className='flex flex-col w-full items-start gap-3'>
                 <div>
