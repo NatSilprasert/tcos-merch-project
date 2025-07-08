@@ -1,14 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { ShopContext } from '../context/ShopContext'
 
-const MerchSection = ({ onLoaded }) => {
-    const { products } = useContext(ShopContext);
-
-    useEffect(() => {
-        if (products && products.length > 0 && onLoaded) {
-            onLoaded();
-        }
-    }, [products, onLoaded]);
+const MerchSection = ( { products }) => {
 
     return (
         <div className='flex flex-col w-full mt-24 items-center'>
