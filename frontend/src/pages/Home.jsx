@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Hero from '../components/Hero'
 import MerchSection from '../components/MerchSection'
+import { ShopContext } from '../context/ShopContext';
 
 const Home = () => {
 
